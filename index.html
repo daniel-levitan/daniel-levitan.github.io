@@ -1,25 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.container {
+  /*border: 1px solid #ccc;*/
+  /*background-color: #eee;*/
+  /*border-radius: 5px;*/
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*
+.container img {
+  float: center;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+
+  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}*/
+</style>
+
 <title>Daniel Levitan</title>
 </head>
 <body>
-<h1>Daniel Levitan</h1>
+<h1><center>Daniel Levitan</center></h1>
 
-<picture>
-  <img src="profissional.png" alt="Myself" style="float:left; padding-right:10px; padding-bottom: 10px; width:200px;">
-</picture>
+<div class="container">
+	<picture>
+	  <img src="profissional.png" alt="Myself" style="float:left; padding-right:10px; padding-bottom: 10px; width:200px;">
+	</picture>
 
 
-<p>I'm an electronic engineer graduated at <a href="https://ufrj.br/">UFRJ</a> (Universidade Federal do Rio de Janeiro), I got my master degree in Computer Science from the same institution.</p>
+	<p>I'm an electronic engineer graduated at <a href="https://ufrj.br/">UFRJ</a> (Universidade Federal do Rio de Janeiro), 
+	  I got my master degree in Computer Science from the same institution.
+	</p>
+	  
+	<p>My welcome page is not complete yet, with time all my project will be linked here, and not only that, I hope to write some articles on the topics I'm studying.</p>
 
-<p>My welcome page is not complete yet, with time all my project will be linked here, and not only that, I hope to write some articles on the topics I'm studying.</p>
+	<p>As a first snipet, I link here my <a href="https://github.com/daniel-levitan/MusicEditor"> final project</a> for my undergrad course. It is a Graphical Music Editor.</p>
 
-<p>Right now I'm attending the <a href="https://yandexdataschool.com/israel/">Y-data school</a> in Tel Aviv.</p>
+	<p> This is my <a href="https://www.linkedin.com/in/daniel-levitan-/">LinkedIn page</a> and this is my <a href="https://github.com/daniel-levitan">Github page</a>.</p>
 
-<p>As a first snipet, I link here my <a href="https://github.com/daniel-levitan/MusicEditor"> final project</a> for my undergrad course. It is a Graphical Music Editor.</p>
 
-<p> This is my <a href="https://www.linkedin.com/in/daniel-levitan-/">LinkedIn page</a> and this is my <a href="https://github.com/daniel-levitan">Github page</a>.</p>
+</div>
 
+<div class="container">
+<p><b>Cross-Platform Audio Editor</b></p>
+<img src="figure1.png" style="width:400px" class="center">
+</div>
+ 
+<div class="container" class="center">
+<p><b>Graph Based Algorithms For Finding Nash Equilibrium</b></p>
+<img src="picture1.png" style="width:400px" class="center">
+</div>
+  
 </body>
 </html>
