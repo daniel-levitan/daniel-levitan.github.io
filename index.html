@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
 <style>
-.container {
-  /*border: 1px solid #ccc;*/
-  /*background-color: #eee;*/
-  /*border-radius: 5px;*/
+/*.container {
+  // border: 1px solid #ccc;
+  //background-color: #eee;
+  // border-radius: 5px;
   padding: 16px;
   margin: 16px 0
 }
@@ -14,8 +15,8 @@
   content: "";
   clear: both;
   display: table;
-}
-/*
+}*/
+
 .container img {
   float: center;
   margin-right: 20px;
@@ -43,42 +44,60 @@
   margin-right: auto;
   width: 50%;
 }
-}*/
+}
 </style>
 
-<title>Daniel Levitan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Levitan - Programmer & Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1><center>Daniel Levitan</center></h1>
+    <header>
+        <h1>Daniel Levitan</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profissional.png" alt="Daniel Levitan" class=profile-pic>
+        <!-- <p>I'm an electronic engineer with a master's degree in Computer Science from UFRJ (Universidade Federal do Rio de Janeiro). Currently, I'm attending the Y-data school in Tel Aviv, where I'm delving deeper into the exciting world of data science.</p>
+        <p>My interests span various domains within technology, including software development, data science, and artificial intelligence. I'm passionate about creating innovative solutions that solve real-world problems.</p> -->
+        
 
-<div class="container">
-	<picture>
-	  <img src="profissional.png" alt="Myself" style="float:left; padding-right:10px; padding-bottom: 10px; width:200px;">
-	</picture>
 
+        <p>I'm an electronic engineer with a master's degree in Computer Science from UFRJ (Universidade Federal do Rio de Janeiro). </p>
+        
+        <p>Navigating varied roles from consulting to project management and client engagement, I've returned to my roots as a software engineer. Working now with Go, C++, and gRPC, my journey reflects a dynamic blend of technical exploration and client engagement. From internships to project management, I've honed skills while consistently adapting to emerging technologies. Now, building microservices and leveraging cloud technologies, I contribute to innovative solutions in the tech landscape.</p>
 
-	<p>I'm an electronic engineer graduated at <a href="https://ufrj.br/">UFRJ</a> (Universidade Federal do Rio de Janeiro), 
-	  I got my master degree in Computer Science from the same institution.
-	</p>
-	  
-	<p>My welcome page is not complete yet, with time all my project will be linked here, and not only that, I hope to write some articles on the topics I'm studying.</p>
+    
 
-	<p>As a first snipet, I link here my <a href="https://github.com/daniel-levitan/MusicEditor"> final project</a> for my undergrad course. It is a Graphical Music Editor.</p>
-
-	<p> This is my <a href="https://www.linkedin.com/in/daniel-levitan-/">LinkedIn page</a> and this is my <a href="https://github.com/daniel-levitan">Github page</a>.</p>
-
-
-</div>
-
-<div class="container">
-<p><b>Cross-Platform Audio Editor</b></p>
-<img src="Figure1.png" style="width:400px" class="center">
-</div>
- 
-<div class="container" class="center">
-<p><b>Graph Based Algorithms For Finding Nash Equilibrium</b></p>
-<img src="Picture1.png" style="width:400px" class="center">
-</div>
-  
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Graphical Music Editor</h3>
+            <p>A graphical music editor developed as my final project for my undergraduate course.</p>
+            <p><a href="https://github.com/daniel-levitan/MusicEditor">View on GitHub</a></p>
+        </div>
+        <div class="project">
+            <h3>Mini Shell</h3>
+            <p>A mini shell developed for a course I'm currently undertaking.</p>
+            <p><a href="https://github.com/daniel-levitan/cs213/tree/main/Labs/06%20-%20shell/shlab-handout">View on GitHub</a></p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out:</p>
+        <ul>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/daniel-levitan">Daniel Levitan</a></li>
+            <li>GitHub: <a href="https://github.com/daniel-levitan">daniel-levitan</a></li>
+        </ul>
+    </section>
 </body>
 </html>
