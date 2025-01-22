@@ -1,8 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f3f3f3; /* New color for the page */
+}
+
+.project, .project h3, .project p {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -52,13 +61,57 @@ img {
     max-height: 200px; /* Adjust the maximum height as needed */
 }
 
-.project {
-    background-color: #ddd; /* New color for the project background */
-    /* ddd   */
+/* .project {
+    background-color: #ddd; 
     padding: 10px;
     margin-bottom: 10px;
-}
+} */
 
 .project h3 {
     margin-top: 0;
+}
+
+.project-content {
+    flex: 1;  /* Ensures content takes remaining space */
+}
+
+
+/* .project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+} */
+
+/* .project {
+    display: flex;
+    align-items: center; 
+    background-color: #ddd; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+} */
+
+/* .project-img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+} */
+
+.project {
+    display: flex;
+    align-items: center;  /* Ensures vertical alignment */
+    justify-content: flex-start;  /* Aligns content without extra space */
+    background-color: #ddd; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.project-img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;  /* Adjust spacing */
 }
