@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Levitan - Software Engineer | Systems & Embedded Development</title>
+    <link rel="stylesheet" href="styles.css">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQCTVRKCYB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,22 +16,17 @@
     
       gtag('config', 'G-KQCTVRKCYB');
     </script>
-    
-
-
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Levitan - Programmer & Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
     <header>
         <h1>Daniel Levitan</h1>
+        <h2>Software Engineer with a focus on Systems and Embedded Development</h2>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -32,20 +34,50 @@
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <img src="profissional.png" alt="Daniel Levitan" class=profile-pic>
+        <img src="profissional.png" alt="Daniel Levitan" class="profile-pic">
         
-        <p>I am an electronic engineer with a master's degree in Computer Science from UFRJ (Universidade Federal do Rio de Janeiro).</p>
+        <p>I am a Software Engineer with a background in Electronic Engineering and Computer Science (M.Sc., UFRJ).</p>
 
-        <p>After a career spanning consulting, logistics, project management, 
-        and customer-facing roles, I returned to software engineering — 
-        this time with a focus on systems programming. I work close to the 
-        metal: C, C++, performance, and correctness over abstraction.
+        <p>My professional background spans software development, engineering, consulting, and technical project management. Over the past three years, 
+            I have focused on professional software development, primarily in C, with additional experience in C++ and Go.
         </p>
-        
+        <p>I am currently deepening my expertise in modern C++ and low-level software development, with a particular interest in embedded systems and hardware-software interaction.</p>
 
     </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Software Engineer — Priority Software (2023 - Present)</li>
+            <li>Solutions Engineer — Fireblocks (2022 - 2023)</li>
+            <li>Technical Account Manager — nSure.ai (2021 - 2022)</li>
+            <li>Earlier career — Oracle and Accenture</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>M.Sc. Computer Science — UFRJ</li>
+            <li>B.Sc. Electrical and Computer Engineering — UFRJ</li>
+        </ul>
+        
+    </section>
+
     <section id="projects">
         <h2>Projects</h2>
+        <div class="project">
+            <img src="STM32_board.jpeg" alt="STM32 board" class="project-img">
+            <div class="project-content">
+                <h3>STM32 Embedded Development</h3>
+                <p>A hands-on exploration of embedded systems using the STM32F407G-DISC1 board. 
+                    Currently focused on GPIO configuration, register-level programming, 
+                    and understanding the MCU's architecture, with plans to explore interrupts, 
+                    timers, and peripheral communication.</p>
+                <p><a href="https://github.com/daniel-levitan/stm32-projects">View on GitHub</a></p>
+            </div>
+        </div>
+
 
         <div class="project">
             <img src="colliding_bodies.gif" alt="Physics Simulation Engine" class="project-img">
@@ -53,15 +85,6 @@
                 <h3>Physics Simulation Engine</h3>
                 <p>A physics simulation engine that I'm currently developing. Written in C++, this project aims to simulate real-world physical interactions with high accuracy and performance.</p>
                 <p><a href="https://github.com/daniel-levitan/physicsEngine">View on GitHub</a></p>
-            </div>
-        </div>
-
-        <div class="project">
-            <img src="pong.gif" alt="Pong" class="project-img">
-            <div class="project-content">
-                <h3>Pong</h3>
-                <p>A classic Pong game implementation I developed using C and the SDL library.</p>
-                <p><a href="https://github.com/daniel-levitan/pong">View on GitHub</a></p>
             </div>
         </div>
 
