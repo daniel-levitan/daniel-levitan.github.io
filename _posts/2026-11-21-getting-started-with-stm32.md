@@ -399,7 +399,7 @@ In this project I will use stm32f4xx.h, which is the STM32F4 device header provi
 
 Let's inspect some parts of the code. Starting with `GPIO_TypeDef`:
 
-```
+```c
 /**
   * @brief General Purpose I/O
   */
@@ -473,7 +473,7 @@ After this gruesome preliminaries, we are finally ready to write some code!
 
 First I need to enable the clock for `GPIOD`, this is done via the `RCC` struct, specifically, the 3rd bit from its `AHB1ENR` member. 
 
-```
+```c
 RCC->AHB1ENR |= (1U << 3);    /* Setting bit 3 to 1 */
 ```
 
@@ -485,7 +485,7 @@ The clock for `GPIOD` is now enabled.
 
 To do that we need to change register `GPIOD->MODER`, bits 25 and 24 are the ones responsible for pin 12. We want them to be in output mode, so these bits should be set to `01`.
 
-```
+```c
 GPIOD->MODER &= ~(3U << 24);    /* Clear bits 25 and 24 */
 GPIOD->MODER |=  (1U << 24);    /* Set bit 24 to 1 */
 ```
@@ -502,7 +502,7 @@ The mode for `GPIOD` pin 12 is now set to output mode.
 
 Now we have two options to activate pin 12, we can either use `GPIOD->ORD` or `GPIOD->BSSR`. The first would require us to read, modify, and write, as we've done for the two previous registers. Let's try somethiing different, using `BSSR` we can write to the port without the need for the read-modify-write cycle.
 
-```
+```c
 GPIOD->BSRR = (1U << 12);    /* Set bit 12 to 1 */
 ```
 
@@ -512,7 +512,7 @@ Bit 12 is now set to 1.
 
 We cannot forget to add the `stm32f4xx.h` header to our code, and this is the code in its final form:
 
-```
+```c
 #include <stdint.h>
 #include "stm32f4xx.h"
 

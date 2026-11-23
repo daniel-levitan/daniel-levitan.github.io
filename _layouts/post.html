@@ -2,12 +2,48 @@
 layout: default
 ---
 
-<article>
-    <h1>{{ page.title }}</h1>
+<div class="post-layout">
 
-    <p>
-        <small>{{ page.date | date: "%B %d, %Y" }}</small>
-    </p>
+    <aside class="toc-sidebar">
+        <nav aria-label="Table of contents">
+            <h2>On this page</h2>
+            <ul id="toc-list"></ul>
+        </nav>
+    </aside>
 
-    {{ content }}
-</article>
+    <article>
+        <h1>{{ page.title }}</h1>
+
+        <p>
+            <small>{{ page.date | date: "%B %d, %Y" }}</small>
+        </p>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
+
+</div>
+
+<script>
+    const content = document.querySelector('.post-content');
+    const tocList = document.getElementById('toc-list');
+
+    const headings = content.querySelectorAll('h1, h2, h3');
+
+    headings.forEach((heading, index) => {
+        if (!heading.id) {
+            heading.id = `section-${index + 1}`;
+        }
+
+        const listItem = document.createElement('li');
+        listItem.classList.add(`toc-${heading.tagName.toLowerCase()}`);
+        const link = document.createElement('a');
+
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent;
+
+        listItem.appendChild(link);
+        tocList.appendChild(listItem);
+    });
+</script>
