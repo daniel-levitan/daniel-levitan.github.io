@@ -107,3 +107,57 @@ section {
         margin: 0 8px;
     }
 }
+
+/* Blog */
+article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+}
+
+article h1 {
+    margin-bottom: 10px;
+}
+
+article small {
+    color: #777;
+}
+
+/* Blog index */
+.blog-index {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.blog-description {
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    margin-bottom: 30px;
+}
+
+.post-item h2 {
+    margin-bottom: 5px;
+}
+
+.post-item h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-item h2 a:hover {
+    color: #0077b6;
+}
+
+.post-item small {
+    color: #777;
+}

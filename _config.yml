@@ -1,0 +1,6 @@
+title: Daniel Levitan
+description: Software engineering, systems, and embedded development
+
+markdown: kramdown
+
+permalink: /blog/:title/

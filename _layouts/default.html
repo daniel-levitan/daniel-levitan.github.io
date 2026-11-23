@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} | Daniel Levitan</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Daniel Levitan</h1>
+        <h2>Software Engineer with a focus on Systems and Embedded Development</h2>
+
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}#about">About</a></li>
+                <li><a href="{{ '/' | relative_url }}#experience">Experience</a></li>
+                <li><a href="{{ '/' | relative_url }}#education">Education</a></li>
+                <li><a href="{{ '/' | relative_url }}#projects">Projects</a></li>
+                <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
+                <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+</body>
+</html>

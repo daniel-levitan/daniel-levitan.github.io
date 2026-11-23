@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog-index">
+
+    <h1>Technical Blog</h1>
+
+    <p class="blog-description">
+        Exploring systems programming, embedded development,
+        and the details behind hardware and software.
+    </p>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+            <li class="post-item">
+                <h2>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h2>
+
+                <small>{{ post.date | date: "%B %d, %Y" }}</small>
+
+                <!-- <p>{{ post.excerpt }}</p> -->
+                <!-- <div class="post-excerpt">
+                    {{ post.excerpt }}
+                </div> -->
+                <p>{{ post.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+</div>
