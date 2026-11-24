@@ -82,7 +82,7 @@ This is why we need to enable the clock for the peripherals we want to use. In o
 
 ### Which pin corresponds to the green LED?
 
-I chose to turn on the green LED, so I had to find the pin responsible for controlling it. The [User Manual - UM1472](https://www.st.com/resource/en/user_manual/um1472-discovery-kit-with-stm32f407vg-mcu-stmicroelectronics, on page 21, section 7.5, states:
+I chose to turn on the green LED, so I had to find the pin responsible for controlling it. The [User Manual - UM1472](https://www.st.com/resource/en/user_manual/um1472-discovery-kit-with-stm32f407vg-mcu-stmicroelectronics), on page 21, section 7.5, states:
 
 > *"User LD4: The green LED is a user LED connected to the I/O PD12 of the STM32F407VGT6"*
 
