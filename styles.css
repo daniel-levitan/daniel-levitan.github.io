@@ -265,3 +265,17 @@ pre code {
     padding: 0;
     border: none;
 }
+
+/* Tables */
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+article th,
+article td {
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
