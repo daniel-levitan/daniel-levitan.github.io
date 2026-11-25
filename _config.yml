@@ -1,6 +1,16 @@
+url: "https://daniel-levitan.github.io"
+baseurl: ""
+
 title: Daniel Levitan
 description: Software engineering, systems, and embedded development
 
 markdown: kramdown
 
 permalink: /blog/:title/
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - others/
+  - Picture1.html
